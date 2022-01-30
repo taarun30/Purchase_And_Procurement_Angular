@@ -1,0 +1,111 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <style>
+        .home{
+            padding-left: 10px;
+        }
+        hr.style1{
+            border-top: 4px double #8c8b8b;
+          text-align: center;
+        }
+  
+    </style>
+  </head>
+  <body>
+    <header>
+      <br>
+      <h3 class="d-flex justify-content-center">GOODS-TECH</h3>
+      
+        <hr class="style1">
+        <div>
+            <a class="home" href="#">Home</a>
+        </div>
+        <hr class="style1">
+        <h5 class="d-flex justify-content-center">Manufacturer Management Portal</h5>
+
+        <h3>Add Manufacturer</h3>
+    </header>
+
+
+    <label class="col-sm-2 col-form-label">ManufacturerID</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="ManufacturerID"
+        placeholder="Enter ManufacturerID">
+    </div>
+
+    <label class="col-sm-2 col-form-label">CompanyName</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="CompanyName"
+        placeholder="Enter CompanyName">
+      
+    </div>
+
+    <label class="col-sm-2 col-form-label">FirstName</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="Firstname"
+        placeholder="Enter FirstName">
+      
+    </div>
+
+    <label class="col-sm-2 col-form-label">LastName</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="Lastname"
+        placeholder="Enter LastName">
+        
+    </div>
+
+    <label class="col-sm-2 col-form-label">Address</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="Address"
+        placeholder="Enter Address">
+       
+    </div>
+
+    <label class="col-sm-2 col-form-label">City</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="City"
+        placeholder="Enter City">
+        
+    </div>
+
+    <label class="col-sm-2 col-form-label">State</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="State"
+        placeholder="Enter State">
+        
+    </div>
+
+    <label class="col-sm-2 col-form-label">PostalCode</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="PostalCode"
+        placeholder="Enter PostalCode">
+        
+    </div>
+
+    <label class="col-sm-2 col-form-label">Country</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="Country"
+        placeholder="Enter Country">
+        
+    </div>
+
+    <label class="col-sm-2 col-form-label">Phone</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="Phone"
+        placeholder="Enter Phone">
+        
+    </div>
+
+    <label class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="Email"
+        placeholder="Enter Email">
+        
+    </div>
+    <br>
+    <button type="button" class="btn2"(click)="addclick()">Add</button>&nbsp;
+    <br>
+    <br>
+

@@ -1,0 +1,49 @@
+<br>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+  <style>
+      .home{
+          padding-left: 10px;
+      }
+      hr.style1{
+          border-top: 4px double #8c8b8b;
+        text-align: center;
+      }
+
+  </style>
+</head>
+<body>
+  <header> 
+      <hr class="style1">
+      <div>
+          <a class="home" (click)="home()">Home</a>
+      </div>
+      <hr class="style1">
+      <h2 class="d-flex justify-content-center">Customized Order</h2>
+  </header>
+
+<table class="table table-striped table-bordered">
+    <thead>
+  
+      <th>InventoryId</th>
+      <th>ProductName</th>
+      <th>Price</th>
+      <th >Quantity</th>
+ 
+  
+  
+    </thead>
+    <tbody>
+        <tr *ngFor="let prod of CustOrderList">  
+            <td>{{prod.InventoryId}}</td>  
+            <td>{{prod.Productname}}</td>  
+
+            <td>{{prod.ProductPrice}}</td> 
+            <td><input type="number" id="qty"></td>
+    </tbody>
+    </table>
+
+    <br>
+    <button type="button" class="btn2"(click)="Order()">OrderAll</button>

@@ -1,0 +1,67 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <style>
+        .home{
+            padding-left: 10px;
+        }
+        hr.style1{
+            border-top: 4px double #8c8b8b;
+          text-align: center;
+        }
+  
+    </style>
+  </head>
+  <body>
+    <header> 
+        <hr class="style1">
+        <div>
+            <a class="home" (click)="home()">Home</a>
+        </div>
+        <hr class="style1">
+        <h2 class="d-flex justify-content-center">Customized Order</h2>
+    </header>
+    
+  
+  
+  
+  <br>
+  
+
+
+
+<br>
+
+<br>
+<br>
+
+
+
+<div class="form-check"  *ngFor="let prod of OrderList" >
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" 
+    (ngModelChange)="Insert(prod.Productname)">
+    <label class="form-check-label" for="flexCheckDefault">
+     {{prod.Productname}}
+    </label>
+  </div>
+
+  
+
+     
+
+  <br>
+
+
+    
+<br>
+
+
+  <button type="button" class="btn1"(click)="Custom()">Customized Order</button>
+  <br><br>
+  <br>
+  <hr class="style1">
+  <br>
+  <button type="button" class="btn2"(click)="AllProducts()">OrderAll</button>
+<br>
+<br>
